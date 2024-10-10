@@ -7,9 +7,9 @@ Library    Collections
 *** Variables ***
 ${LoginUrl}     https://yopmail.com/fr/
 ${BROWSER}      ff
-${PDFs_DOWNLOADED}     ../../Downloads/download/
-${PDFs_ACCEPTED}    ../../Downloads/accepter/
-${PDFs_REFUSED}     ../../Downloads/refuser/
+${PDFs_DOWNLOADED}     ../download/
+${PDFs_ACCEPTED}    ../accepter/
+${PDFs_REFUSED}     ../refuser/
 @{SEARCH_KEYWORDS}     JAVA        BDD
 *** Test Cases ***
 Send interview mail to BU and sorting CVs

@@ -26,6 +26,7 @@ OpenBrower
 navigate to register page
     Click Element   class=ico-register
     Wait Until Page Contains    Your Personal Details      timeout=10s
+
 input Personal informations
     Click Element   id=gender-male
     Input Text      id=FirstName    ${FirstName}
@@ -35,6 +36,7 @@ input Personal informations
     Input Text      id=ConfirmPassword     ${pwd}
     Click Element   id=register-button
     Wait Until Page Contains     Your registration completed     timeout=25s
+
 Updating Personal informations
     Click Element   class=account
     Click Element   id=gender-female
@@ -51,6 +53,7 @@ Login
     Input Text      id=Email        ${mail}
     Input Text      id=Password     ${pwd}
     Click Element   xpath=//input[@class='button-1 login-button']
+
 Log Out after logged in
     Wait Until Page Contains     Log out     timeout=30s
     Click Element   class=ico-logout
@@ -63,6 +66,5 @@ Forgot password
     Click Element   xpath=//input[@class='button-1 password-recovery-button']
     Wait Until Page Contains    Email with instructions has been sent to you.   timeout=10s
 
-   
 
 *** Keywords ***

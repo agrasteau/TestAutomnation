@@ -10,6 +10,7 @@ Test Setup  ouvrir navigateur
 *** Variables ***
 ${URL}          https://www.saucedemo.com/
 
+
 *** Test Cases ***   USERNAME    PASSWORD
 Test récupération des données
     ouvrir navigateur

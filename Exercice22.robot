@@ -10,9 +10,10 @@ ${ArticleText}  Voiture - BBURAGO - BMW M3 (E30)
 ***Test Cases***
 Test d'ouverture du site web cdiscount
     Open BROWSER    ${LoginUrl}     ${BROWSER}
+
 Test Tout accepter
     Set Selenium Speed  1
-#    Click Element   //div[text()="Tout accepter"]
+    #Click Element   //div[text()="Tout accepter"]
     # Attendre que la barre de recherche soit visible
     Wait Until Element Is Visible   //input[@type='search' and @name='search']    timeout=10s
 
